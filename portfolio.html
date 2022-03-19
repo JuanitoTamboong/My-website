@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style  type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+             background-color: #19171a;
+            
+        }
+        .logo img{
+            height: 80px;
+            width: 80px;
+        position: absolute;
+        top: 15px;
+        filter: contrast(100%);
+        }
+        .style-page{
+            border: 1px solid black;
+            border-radius: 0px 0px 65px 65px;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
+            rgba(9,40,121,0.8468429608171394) 35%, rgba(0,212,255,1) 100%);
+             padding: 50px;
+            
+        }
+        
+        .image-circle img{
+            height: 200px;
+            width: 200px; 
+            position: absolute;
+            border: 6px solid #0c0c57;
+            border-radius: 50%;
+            margin: 0px 480px 0px 480px;
+            top: 100px;
+            transition: all 1s;
+        
+        
+        }
+        .image-circle img:hover{
+            transform: scale(1.1);
+        }
+        .nav ul{
+        text-align: center;
+        
+        }
+        .nav ul li{
+         display: inline-block;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: monospace;
+            position: relative;
+            font-size: 17px;
+            letter-spacing: 2px;
+            padding: 8px;
+            text-shadow: 1px 2px #160505;
+            
+        }
+        .nav ul li a:hover{
+            border-bottom: 4px solid red;
+            cursor: pointer;
+            transition: ease-out 1s;
+            border-top: 1px solid white;
+        }
+        .btn {
+        text-decoration: none;    
+        margin-right: 13px;
+        float: right;
+    bottom: 45px;
+    border: 1px solid none;
+    border-radius:4px ;
+    background: #46181800;
+    color: #eee4e4;
+    padding: 5px;
+    position: relative;
+    box-shadow: 2px 3px 4px #160505,
+    inset 1px 4px 4px  #130101a4;
+     cursor: pointer;
+     font-family: 'Chakra Petch', sans-serif;
+     font-weight:bold;
+     text-shadow: 1px 2px #160505;
+                 
+  }
+  .btn:hover{
+      color: #f51142;
+  }
+  .style-pages{
+    border: 1px solid none;
+            border-radius: 45px 45px 0px 0px;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
+            rgba(9,40,121,0.8468429608171394) 35%, rgba(0,212,255,1) 100%);
+             padding: 60px;
+             margin: 35px 0px;
+    }
+    .style-pages a{
+        text-decoration: none;
+         font-size: 35px;
+         color: #fff;
+         bottom: -60px;
+         position: relative;
+          
+          text-shadow: 1px 2px #160505;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+          
+    }
+    .style-pages span{
+     color: crimson;
+    }
+    .content p{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 17px;
+        letter-spacing: 1px;
+        color: #fff;
+        border: 1px solid white;
+        margin:0px 200px 0px 200px;
+        box-sizing: content-box;
+        border-radius: 200px 200px 200px 200px;
+        }
+        .content img{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            margin: 0px 900px;
+            bottom: 7px;
+            border-radius: 50%;
+         }
+         .rsu img{
+             height: 200px;
+             width: 200px;
+             margin-left: 150px;
+         }
+         .progress{
+    padding: 11px;
+       display:flex;
+      justify-content: center;
+       
+    }
+    
+     
+     .progress a{
+        text-decoration: none;
+        font-size: 35px;
+        color: #fff;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 1px 2px #160505;
+    }
+    .progress span{
+        color: #f51142;
+    }
+    .progress-bar{
+        background-color: whitesmoke;
+        box-shadow: 10px 1px 12px 0px;
+       position:relative;
+        padding: 13px;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 200px;
+    }
+    .progress-bar img{
+        height: 200px;
+        width: 200px;
+        bottom: 35px;
+        position: absolute;
+    margin-left: 600px;
+    border-radius: 20%;
+    box-shadow: 1px 2px 3px 4px #282828,
+        inset 0px 2px 3px 4px #160505;
+    }
+    .skills{
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+
+
+    }
+    .skill-name{
+        font-size: 18px;
+        font-weight: 700;
+      text-transform: uppercase;
+       margin: 20px 0;
+    }
+    .skill-bar{
+        height: 14px;
+        background: #282828;
+        border-radius: 3px;
+    
+    }
+    .skill-per{
+        height: 14px;
+        background: #d13639;
+        border-radius: 3px;
+        position: relative;
+        animation:fillbar 2.5s 2s;
+        color: #f1f1f1;
+
+    }
+    .skill-per::before{
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background: #7d75a0;
+        border-radius: 4px;
+        font-size: 12px;
+        top: -35px;
+        right: 0px;
+        transform: translateX(50%);
+    }
+    .skill-per::after{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background:#7d75a0;
+        top: -20px;
+        right: 0;
+        transform: translateX(50%)rotate(45deg);
+        border-radius: 2px;
+    }
+    @keyframes fillbar{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+   .contact a{
+           color: #fff; 
+           font-size: 35px;
+        text-decoration:none;
+        font-family: Arial, Helvetica, sans-serif;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       font-weight: bold;
+       padding-top: 14px;
+       
+        }
+        .contact span{
+            color:#f51142;
+        }
+        .contact form{
+            background: #282828;
+            margin-top: 14px;
+            margin-bottom: -200px;
+            padding: 17px;
+            
+        }
+       .contact form h3{
+            color: #fff;
+            text-align: center;
+           
+        }
+        .contact form iframe{
+            position: absolute;
+        } 
+        .contact img{
+            height: 490px;
+            width: 300px;
+            position: absolute;
+        margin-left: 900px;
+        bottom: -979px;
+        }
+        .submit,.reset{
+            width: 5%;
+            color: #d13639;
+            padding: 5px;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 203px 0px 600px;
+          
+            
+        }
+        .submit:hover,.reset:hover{
+            background: #8d0a0d;
+            color: #fff;
+            position: relative;
+            cursor: pointer;
+            transition: ease-out 1s;
+            
+        }
+        input{
+            width: 30%;
+            display: flex;
+            margin-left: 450px;
+            border: 2px solid black;
+            padding: 10px;
+            
+        }
+        .icons a{
+            display: inline-block;
+           padding: 10px;
+           height: 230px;
+           transition: ease-out 1s;
+           transition: all 1s;
+        }
+        .icons a:hover{
+            color:#2f8627;
+            transform: scale(1.1);
+            
+        }
+        .service{
+            background-color: #2f8627;
+            padding-top: 16x;
+            padding-bottom:30%;
+        }
+        .service a{
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+           text-decoration: none;
+           font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+           align-items: center;
+           justify-content: center;
+           
+        }
+        .service span{
+            color: #f51142;
+
+        }
+        .service-1{
+            background-color: #ffff;
+            position: absolute;
+            border-radius: 24px 5px 5px 0px;
+            padding: 5px;
+            transition: all 1s;
+        }
+        .service-1 img{
+            height: 100px;
+            width: 100px;
+            float: right;
+        }
+        .service-1:hover{
+            transform: scaleX(1.1);
+        }
+        .service-1 h2 {
+            color: #d13639;
+        }
+        .service-2{
+            background-color: #ffff;
+            position: absolute;
+            border-radius: 24px 5px 5px 0px;
+            padding: 5px;
+            margin-left: 400px;
+            transition: all 1s;
+            }
+            .service-2:hover{
+                transform: scale(1.1);
+            }
+            .service-2 h2{
+                color: #d13639;
+            }
+            .service-2 img{
+                height: 100px;
+                width: 200px;
+                float: right;
+            }
+            .service-3{
+                background-color: #ffff;
+            position: absolute;
+            border-radius: 24px 5px 5px 0px;
+            padding: 5px;
+            margin-left: 850px;
+            transition: all 1s;
+            }
+            .service-3 h2{
+                color: #d13639;
+            }
+            .service-3 img{
+                height: 100px;
+                width: 200px;
+                float: right;
+            }
+            .service-3:hover{
+                transform: scale(1.1);
+            }
+            footer{
+                background-color: #19171a;
+                color: #fff;
+                text-align: center;
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                padding: 12px;
+            }
+            footer span{
+                color: #d13639;
+            }
+      </style>
+</head>
+<body>
+    <div class="style-page">
+        <div class="logo">
+            <img src="images/logo.png">
+        <div class="image-circle">
+            <img src="images/pogi.jpg"alt="pogi">
+            
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About_Us</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+        <a href="#"class="btn">Log|Out</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="style-pages">
+        <center>    
+         <a href="#"><span>About </span>Us</a>
+        </center>
+        </div>
+        <div class="content">
+    <img src="images/It.jpg">
+        <div class="rsu">
+    <img src="images/rsu logo.jpg">
+            <p>Hi i am Juanito Tamboong<br>I am Web Developer.<br>
+                Studied at Romblon State University.<br>
+                I am determined and decisive.<br>
+                 I identify and develop opportunities.<br> 
+                 I'm a nice fun and friendly person,<br>
+                  I'm honest and punctual,<br>
+                 I work well in a team but also on my own <br>
+                 as I like to set myself goals which I will achieve,<br>
+                  I have good listening and communication skills.</p>
+        </div>
+ </div>
+ <div class="progress">
+ <a href="Skill.html"><span>S</span>kills</a> 
+</div>
+<div class="progress-bar">
+    <img src="images/skills.jpg">
+    <div class="skills">
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+            <div class="skill-per" per="90%" style="max-width:90%"></div>
+        </div>
+        </div>
+    
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+            <div class="skill-per" per="80%" style="max-width:80%"></div>
+        </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">JAVASCRIPT</div>
+        <div class="skill-bar">
+            <div class="skill-per" per="70%" style="max-width:70%"></div>
+        </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">C++</div>
+        <div class="skill-bar">
+            <div class="skill-per" per="60%" style="max-width:60%"></div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <a href="#"><span>C</span>ontact</a>
+    <form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31174.686650156742!2d121.953237658536!3d12.393920754895248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a4c25e027f90b1%3A0x6fea4911bf618a31!2sBudiong%2C%20Odiongan%2C%20Romblon!5e0!3m2!1sen!2sph!4v1647572126369!5m2!1sen!2sph" 
+        width="340" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h3>First Name: <input type="text"class="email"name="email"placeholder="Enter your First Name..."required/></h3>
+        <h3>Last Name: <input type="text"class="email"name="email"placeholder="Enter your Last Name..."required/></h3>
+        <h3>Contact No: <input type="number"class="number"name="email"placeholder="Enter your Last Number..."required/></h3>
+        <h3>Your Age: <input type="number"class="age"name="number"placeholder="Enter your First age..."required/></h3>
+        <h3> YourEmail: <input type="email"class="email"name="email"placeholder="juanitotamboong@gmail.com"required/></h3>
+        <h3>Your Password: <input type="password"class="email"name="password"placeholder="Enter your password..."required/></h3>
+        <h3><input type="submit"class="submit">
+        <input type="reset"class="reset"/></h3>
+        <img src="images/contact.png">
+        <div class="icons">
+            <center>
+            <a href="#"><i class="fa fa-facebook-square"style="font-size:36px"></i></a>
+            <a href="#"><i class="fa fa-github"style="font-size:36px"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"style="font-size:36px"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"style="font-size:36px"></i></a>
+            </center>
+            </div>
+        </form>
+</div>
+<div class="service">
+    <a href="#"><span>S</span>ervices</a>
+    <div class="service-1">
+        <i class="fa fa-check-circle"style="font-size:48px;color:red"></i>
+            <img src="images/web designer.jpg">
+        <h2>Website Designer</h2>
+        <h3>PROFESSIONAL ELEGANT DESIGNS</h3>
+        <p>Our websites capture your audience's attention<br> both through form and function. <br>
+            Thorough attention to layout, appearance, <br>and visual flow to provide 
+            <br>the best web design for brands.</p>
+    </div>
+    <div class="service-2">
+        <i class="fa fa-check-circle"style="font-size:48px;color:red"></i>
+        <img src="images/tutor.jpg">
+        <h2>Online Tutor</h2>
+        <p>My online tutoring platform makes connecting with students<br>
+             (and earning extra income!) simple, convenient, and flexible.<br>
+             We help learners of all ages and stages—from<br>
+              kindergarten through college, continuing education, <br>
+              and career. Our tutors provide empowering,<br>
+              encouraging support to help students complete <br>
+              their assignments, improve their grades, <br>
+              and persist in their studies. Every day, thousands <br>
+              of students share positive feedback about<br>
+               their online tutoring experiences.</p>
+    </div>
+    <div class="service-3">
+        <i class="fa fa-check-circle"style="font-size:48px;color:red"></i>
+        <img src="images/video editing.jpg">
+        <h2>Video Editing</h2>
+        <h3>What should I look for in good video editing?</h3>
+            <p>Simply stated, a good edit will take your<br>
+                ordinary video and make it extraordinary!<br>
+                 Editing can either make or break a video,<br>
+                and good editing should control the video's<br>
+                 structure, pace, and tone
+                <br>. The images and audio should be improved,<br>
+                and it should match what the client envisions<br>
+                 - and then some.</p>
+    </div>
+</div>
+<footer>&copy; Copyright 2022/<span>Juanito</span></footer>
+
+</body>
+</html>
