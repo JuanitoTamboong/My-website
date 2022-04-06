@@ -12,9 +12,8 @@
             box-sizing: border-box;
         }
         html{
-        scroll-behavior:smooth;
+            scroll-behavior: smooth;
         }
-            
         body{
             margin: 0;
             padding: 0;
@@ -24,38 +23,33 @@
         .logo img{
             height: 80px;
             width: 80px;
-        position: absolute;
-        top: 15px;
+        position: relative;
         filter: contrast(100%);
         }
         .style-page{
-            border: 1px solid black;
+            max-width: 100%;
             border-radius: 0px 0px 65px 65px;
             background: rgb(2,0,36);
             background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
             rgba(9,40,121,0.8468429608171394) 35%, rgba(0,212,255,1) 100%);
-             padding: 50px;
-            
+             position: relative;
         }
-        
+        .image-circle{
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            display: flex;
+        }
         .image-circle img{
-            height: 200px;
-            width: 200px; 
-            position: absolute;
+            height: 150px;
+            width: 150px; 
             border: 6px solid #0c0c57;
             border-radius: 50%;
-            margin: 0px 480px 0px 480px;
-            top: 100px;
-            transition: all 1s;
-        
-        
-        }
-        .image-circle img:hover{
-            transform: scale(1.1);
+            position: absolute;
+            top: -35px;
         }
         .nav ul{
         text-align: center;
-        
         }
         .nav ul li{
          display: inline-block;
@@ -65,10 +59,12 @@
             color: #fff;
             font-family: monospace;
             position: relative;
-            font-size: 17px;
+            font-size: 15px;
             letter-spacing: 2px;
-            padding: 8px;
-            text-shadow: 1px 2px #160505;
+            padding: 5px;
+            text-transform: uppercase;
+            top: -35px;
+            font-weight: 700;
             
         }
         .nav ul li a:hover{
@@ -76,88 +72,61 @@
             cursor: pointer;
             transition: ease-out 1s;
             border-top: 1px solid white;
+            color: #18eb7a;
         }
-        .btn {
-        text-decoration: none;    
-        margin-right: 13px;
-        float: right;
-    bottom: 45px;
-    border: 1px solid none;
-    border-radius:4px ;
-    background: #46181800;
-    color: #eee4e4;
-    padding: 5px;
-    position: relative;
-    box-shadow: 2px 3px 4px #160505,
-    inset 1px 4px 4px  #130101a4;
-     cursor: pointer;
-     font-family: 'Chakra Petch', sans-serif;
-     font-weight:bold;
-     text-shadow: 1px 2px #160505;
-                 
-  }
-  .btn:hover{
-      color: #f51142;
-  }
   .style-pages{
     border: 1px solid none;
             border-radius: 45px 45px 0px 0px;
             background: rgb(2,0,36);
             background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
             rgba(9,40,121,0.8468429608171394) 35%, rgba(0,212,255,1) 100%);
-             padding: 60px;
-             margin: 35px 0px;
+         padding: 60px;
+         margin-top: 23px;
+         text-align: center;
+         max-width: 100%;
     }
     .style-pages a{
         text-decoration: none;
-         font-size: 35px;
+        text-transform: uppercase;
+         font-size: 25px;
          color: #fff;
          bottom: -60px;
          position: relative;
-          
-          text-shadow: 1px 2px #160505;
+        shadow: 1px 2px #160505;
           font-weight: bold;
+          top: 40px;
           font-family: Arial, Helvetica, sans-serif;
           
     }
     .style-pages span{
      color: crimson;
     }
+    .contact{
+        position: relative;
+       
+    }
     .content p{
         font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
         font-size: 17px;
         letter-spacing: 1px;
         color: #fff;
-        border: 1px solid white;
-        margin:0px 200px 0px 200px;
-        box-sizing: content-box;
-        border-radius: 200px 200px 200px 200px;
+        text-align: center;
         }
-        .content img{
-            height: 200px;
-            width: 200px;
-            position: absolute;
-            margin: 0px 900px;
-            bottom: 7px;
-            border-radius: 50%;
-         }
-         .rsu img{
-             height: 200px;
-             width: 200px;
-             margin-left: 150px;
-         }
          .progress{
-    padding: 11px;
-       display:flex;
-      justify-content: center;
+             position: relative;
+             text-align: center;
        
     }
     
      
      .progress a{
+         position: relative;
         text-decoration: none;
-        font-size: 35px;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 2px;
+        top: 13px;
+        bottom: 15px;
         color: #fff;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
@@ -167,24 +136,13 @@
         color: #f51142;
     }
     .progress-bar{
-        background-color: whitesmoke;
-        box-shadow: 10px 1px 12px 0px;
-       position:relative;
-        padding: 13px;
-        border-radius: 4px;
+        top: 34px;
         justify-content: center;
         align-items: center;
-        margin: 0px 200px;
-    }
-    .progress-bar img{
-        height: 200px;
-        width: 200px;
-        bottom: 35px;
-        position: absolute;
-    margin-left: 600px;
-    border-radius: 20%;
-    box-shadow: 1px 2px 3px 4px #282828,
-        inset 0px 2px 3px 4px #160505;
+        display: flex;
+        position: relative;
+        background-color: whitesmoke;
+        padding: 10px;
     }
     .skills{
         width: 100%;
@@ -243,53 +201,71 @@
         to{
             width: 100%;
         }
+    }.contact{
+        position: relative;
+        text-align: center;
+        top: 40px;   
+       
     }
    .contact a{
            color: #fff; 
-           font-size: 35px;
+           font-size: 25px;
         text-decoration:none;
         font-family: Arial, Helvetica, sans-serif;
-       justify-content: center;
-       align-items: center;
-       display: flex;
        font-weight: bold;
-       padding-top: 14px;
+       text-transform: uppercase;
+     position: relative;
        
         }
         .contact span{
             color:#f51142;
         }
-        .contact form{
+        .form{
             background: #282828;
-            margin-top: 14px;
-            margin-bottom: -200px;
-            padding: 17px;
-            
-        }
-       .contact form h3{
-            color: #fff;
             text-align: center;
-           
         }
-        .contact form iframe{
-            position: absolute;
-        } 
-        .contact img{
-            height: 490px;
-            width: 300px;
-            position: absolute;
-        margin-left: 900px;
-        bottom: -979px;
-        }
+       .form label{
+           color: #ffffff;
+           font-family: monospace;
+           font-size: 17px;
+           text-align: center;
+           position: relative;
+           text-transform: uppercase;
+       }
+       input{
+           position:relative;
+           display: inline;
+           justify-content: center;
+           align-items: center;
+
+       }
+        #form{
+        background-color: #6f777ff8;
+        outline: none;
+        border: none;
+        text-align: center;
+         font-family: monospace;
+         color: #ffffff;
+         position: relative;
+         display: flex;
+         padding: 12px;
+         place-items: center;
+         width: 50%;
+         left: 26%;
+                     
+           }
         .submit,.reset{
-            width: 5%;
+            top: 15px;
             color: #d13639;
             padding: 5px;
             font-weight: bold;
-            justify-content: center;
             align-items: center;
-            margin: 0px 203px 0px 600px;
-          
+            text-align: center;
+            position: relative;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        
             
         }
         .submit:hover,.reset:hover{
@@ -298,79 +274,99 @@
             position: relative;
             cursor: pointer;
             transition: ease-out 1s;
+
             
         }
-        input{
-            width: 30%;
-            display: flex;
-            margin-left: 450px;
-            border: 2px solid black;
-            padding: 10px;
-            
+        #iframe{
+            position: relative;
+            top: 30px;
+        }
+        .icons{
+            text-align: center;
+            position: relative;
+            top: 80px;
         }
         .icons a{
+            margin-top: 12px;
+            bottom: 23px;
+            position: relative;
             display: inline-block;
            padding: 10px;
-           height: 230px;
            transition: ease-out 1s;
            transition: all 1s;
+           color: #ffffff;
         }
         .icons a:hover{
             color:#2f8627;
             transform: scale(1.1);
             
         }
+        .icons h3{
+         position: relative;
+         text-align: center;
+         font-size: 23px;
+         color: #ffffff;
+         top: -50px;
+         font-family: monospace;
+        }
         .service{
-            background-color: #2f8627;
-            padding-top: 16x;
-            padding-bottom:30%;
+            text-align: center;
+            position: relative;
+            top: 30px;
+            ]
         }
         .service a{
-            font-size: 35px;
+            position: relative;
+            font-size: 25px;
             font-weight: bold;
             color: #fff;
            text-decoration: none;
            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-           align-items: center;
-           justify-content: center;
-           
+          text-transform: uppercase;
+         
         }
         .service span{
             color: #f51142;
 
         }
+        .my-services{;
+            position: relative;
+             top: 34px;
+        }
         .service-1{
             background-color: #ffff;
-            position: absolute;
-            border-radius: 24px 5px 5px 0px;
-            padding: 5px;
-            transition: all 1s;
+            position: relative;
+            text-align: center;
+            padding: 12px;
+            animation: services1 5s linear 2s;
+        }
+        @keyframes services1{
+            0%{left: -400px;}
+            100%{left: 0px;}
         }
         .service-1 img{
             height: 100px;
             width: 100px;
             float: right;
         }
-        .service-1:hover{
-            transform: scaleX(1.1);
-        }
         .service-1 h2 {
             color: #d13639;
+            text-transform: uppercase;
         }
         .service-2{
-            background-color: #ffff;
-            position: absolute;
-            border-radius: 24px 5px 5px 0px;
-            padding: 5px;
-            margin-left: 400px;
-            transition: all 1s;
+            position: relative;
+            background-color: #ffffff;
+            text-align: center;
+            top: 23px;
+            animation: services2 5s linear 2s;
             }
-            .service-2:hover{
-                transform: scale(1.1);
+            @keyframes services2 {
+                0%{right: -400px;}
+                100%{right:0px;}
             }
             .service-2 h2{
                 color: #d13639;
+                text-transform: uppercase;
             }
             .service-2 img{
                 height: 100px;
@@ -378,25 +374,28 @@
                 float: right;
             }
             .service-3{
+                text-align: center;
                 background-color: #ffff;
-            position: absolute;
-            border-radius: 24px 5px 5px 0px;
-            padding: 5px;
-            margin-left: 850px;
-            transition: all 1s;
+                position: relative;
+                 top: 23px;
+                 animation: services3 5s linear 2s;
+            }
+            @keyframes services3 {
+                0%{left: -400px;}
+                100%{left: 0px;}
             }
             .service-3 h2{
                 color: #d13639;
+                text-transform: uppercase;
             }
             .service-3 img{
                 height: 100px;
                 width: 200px;
                 float: right;
             }
-            .service-3:hover{
-                transform: scale(1.1);
-            }
             footer{
+                top: 50px;
+                position: relative;
                 background-color: #19171a;
                 color: #fff;
                 text-align: center;
@@ -412,48 +411,40 @@
 <body>
     <div class="style-page">
         <div class="logo">
-            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/271744726_1264831373993877_400642920595065294_n.png?stp=dst-png_p206x206&_nc_cat=107&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeHfEW_DAKiJ7ZLx1ZKthukcQRoTKq6snd5BGhMqrqyd3q2fmYg4ufaUjhJzZ8THMAlyrGCUe2N1vBrgJ9SgfXbn&_nc_ohc=rGBBC6KSyg4AX-30HPw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIdVOFvr01U-GaZXbniMndqllC6pwmxyg_QEMoltsWKwA&oe=626C579D">
-        <div class="image-circle">
-            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/275784561_502504221372853_8089892366818772211_n.jpg?stp=dst-jpg_p206x206&_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeF_GxQJW9jxWeJP4ACuS0_D5FXlLLklV83kVeUsuSVXzUiETUuFiKfEbcT1im1mi_YTxseEQPZawME6uM0E7DG5&_nc_ohc=Psdp0wIT0s8AX_DEYMg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIufYoZhd4F0tXbRFKFb4cy7qPILgEsUMrqbTihXCuPGA&oe=626CEE07"alt="pogi">
-            
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/271744726_1264831373993877_400642920595065294_n.png?stp=dst-png_p206x206&_nc_cat=107&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeHfEW_DAKiJ7ZLx1ZKthukcQRoTKq6snd5BGhMqrqyd3q2fmYg4ufaUjhJzZ8THMAlyrGCUe2N1vBrgJ9SgfXbn&_nc_ohc=NBauZUd7c7AAX-Wz1_9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKnDUgWm9Z3y_j8u5rtlRDKeMU011spwsDC11wChGXHbA&oe=6274409D">        
     <div class="nav">
         <ul>
-            <li><a href="#HOME">Home</a></li>
-            <li><a href="#ABOUT_US">About_Us</a></li>
-            <li><a href="#SKILLS">Skills</a></li>
-            <li><a href="#CONTACT">Contact</a></li>
-            <li><a href="#SERVICES">Services</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#About-Us">About|Us</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Services">Services</a></li>
         </ul>
-        <a href="#"class="btn">Log|Out</a>
         </div>
+        <div class="image-circle">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/275784561_502504221372853_8089892366818772211_n.jpg?stp=dst-jpg_p206x206&_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeF_GxQJW9jxWeJP4ACuS0_D5FXlLLklV83kVeUsuSVXzUiETUuFiKfEbcT1im1mi_YTxseEQPZawME6uM0E7DG5&_nc_ohc=eWkoesrH-qkAX93-PjY&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJ8SMWRc8LeOBj8vWcA4bAb0mtns1cGbbmA18r4jMGeIw&oe=6270E287"alt="pogi">
       </div>
     </div>
     </div>
     <div class="style-pages">
-        <center>    
-         <a href="#"id="ABOUT_US"><span>About </span>Us</a>
-        </center>
+         <a href="#"id="About-US"><span>About </span>Us</a>
         </div>
         <div class="content">
-    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/277113828_1314527542366066_7814355082969110925_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeEp6UJwoeqUAP38YnTnzsUgdrDxUNMzfjZ2sPFQ0zN-Nmz_etixYTGLjLrz93Ge4Ng3v0FjzMgXuxPLBHO0YU2p&_nc_ohc=t3HlGhCAjPgAX8-h8yR&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIm8JGfUXqFIXrLcmccLCa7VRcJ7LhklyJgZNzcQoJHbg&oe=626FA718">
-        <div class="rsu">
-    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/277078737_650258762704271_3515255879338496935_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeGz16Vu74P8G-n3JZkplam40vyqqVY2LRfS_KqpVjYtF0282eB4SAo-j1lZ6OSWzKzYvYc_NLLhBE1b9cq1VCFD&_nc_ohc=8WUKqM_1zykAX-oCCPz&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVLfDtjeqPRzA8qL5ONN9pPG_DdFoKB55mXGnTd_8inbNg&oe=626F9B62">
-            <p>Hi i am Juanito Tamboong<br>I am Web Developer.<br>
-                Studied at Romblon State University.<br>
-                I am determined and decisive.<br>
-                 I identify and develop opportunities.<br> 
-                 I'm a nice fun and friendly person,<br>
-                  I'm honest and punctual,<br>
-                 I work well in a team but also on my own <br>
-                 as I like to set myself goals which I will achieve,<br>
+            <p>Hi i am Juanito Tamboong I am Web Developer.
+                Studied at Romblon State University.
+                I am determined and decisive.
+                 I identify and develop opportunities.
+                 I'm a nice fun and friendly person,
+                  I'm honest and punctual,
+                 I work well in a team but also on my own 
+                 as I like to set myself goals which I will achieve,
                   I have good listening and communication skills.</p>
         </div>
  </div>
  <div class="progress">
- <a href="#"id="SKILLS"><span>S</span>kills</a> 
+ <a href=""id="Skils"><span>S</span>kills</a> 
 </div>
 <div class="progress-bar">
-    <img src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t1.15752-9/277373230_526770225492932_5340997756654831417_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFrzyXrXiQhnoUZ11QElAQ3t3okKmXNw8a3eiQqZc3DxrwZCnqeExHxeQfkb2mbkDW4my716D51XJKY1JaWHTZt&_nc_ohc=Y_D_PrT-qZcAX-r7mA5&_nc_ht=scontent.fmnl25-3.fna&oh=03_AVKWjcL6l3XVxrCOLjCUl8CUAG0cOPYux7t9bIuc2rzQog&oe=626E209A">
     <div class="skills">
         <div class="skill">
             <div class="skill-name">HTML</div>
@@ -484,71 +475,72 @@
     </div>
 </div>
 <div class="contact">
-    <a href="#" id="CONTACT"><span>C</span>ontact</a>
-    <form>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31174.686650156742!2d121.953237658536!3d12.393920754895248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a4c25e027f90b1%3A0x6fea4911bf618a31!2sBudiong%2C%20Odiongan%2C%20Romblon!5e0!3m2!1sen!2sph!4v1647572126369!5m2!1sen!2sph" 
-        width="340" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <h3>First Name: <input type="text"class="email"name="email"placeholder="Enter your First Name..."required/></h3>
-        <h3>Last Name: <input type="text"class="email"name="email"placeholder="Enter your Last Name..."required/></h3>
-        <h3>Contact No: <input type="number"class="number"name="email"placeholder="Enter your Last Number..."required/></h3>
-        <h3>Your Age: <input type="number"class="age"name="number"placeholder="Enter your First age..."required/></h3>
-        <h3> YourEmail: <input type="email"class="email"name="email"placeholder="juanitotamboong@gmail.com"required/></h3>
-        <h3>Your Password: <input type="password"class="email"name="password"placeholder="Enter your password..."required/></h3>
-        <h3><input type="submit"class="submit">
-        <input type="reset"class="reset"/></h3>
-        <img src="https://i.pinimg.com/originals/a0/b0/b0/a0b0b0f6b34f192fbb28c4104eb5c5f3.png"/>
-        <div class="icons">
-            <center>
-            <a href="#"><i class="fa fa-facebook-square"style="font-size:36px"></i></a>
-            <a href="#"><i class="fa fa-github"style="font-size:36px"></i></a>
-            <a href="#"><i class="fa fa-youtube-play"style="font-size:36px"></i></a>
-            <a href="#"><i class="fa fa-twitter-square"style="font-size:36px"></i></a>
-            </center>
-            </div>
-        </form>
+    <a href="#"id="Contact"><span>C</span>ontact</a>
+    <div class="form">
+    <label>First Name<input type="text"class="email"id="form"name="email"placeholder="Enter your First Name..."required/></label>
+    <label>Last Name<input type="text"class="email"id="form"name="email"placeholder="Enter your Last Name..."required/></label>
+    <label>Contact No<input type="number"class="number"id="form"name="email"placeholder="Enter your Last Number..."required/></label>
+    <label> Age<input type="number"class="age"id="form"name="number"placeholder="Enter your First age..."required/></label>
+    <label> Email<input type="email"class="email"id="form"name="email"placeholder="juanitotamboong@gmail.com"required/></label>
+    <label> Password<input type="password"class="email"id="form"name="password"placeholder="Enter your password..."required/></label>
+    <input type="submit"class="submit"/>
+        <input type="reset"class="reset"/>
+    
+        <iframe id="iframe"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31174.686650156742!2d121.953237658536!3d12.393920754895248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a4c25e027f90b1%3A0x6fea4911bf618a31!2sBudiong%2C%20Odiongan%2C%20Romblon!5e0!3m2!1sen!2sph!4v1647572126369!5m2!1sen!2sph" 
+        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 </div>
+        <div class="icons">
+            <a href="https://web.facebook.com/juanito.tamboong.73"id="social-icons"><i class="fa fa-facebook-square"style="font-size:36px"></i></a>
+            <a href="https://github.com/JuanitoTamboong"id="social-icons"><i class="fa fa-github"style="font-size:36px"></i></a>
+            <a href="https://www.youtube.com/"id="social-icons"><i class="fa fa-youtube-play"style="font-size:36px"></i></a>
+            <a href="https://twitter.com/f_tamboong"id="social-icons"><i class="fa fa-twitter-square"style="font-size:36px"></i></a>
+            <h3>connect me</h3>
+        </div>
+
 <div class="service">
-    <a href="#"id="SERVICES"><span>S</span>ervices</a>
+    <a href="#"id="Services"><span>S</span>ervices</a>
+</div>
+<div class="my-services">
     <div class="service-1">
         <i class="fa fa-check-circle"style="font-size:48px;color:red"></i>
-            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/277010085_657577218870847_6168265884284012431_n.png?stp=dst-png_p206x206&_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeE6tOgnUM7uqupI-VWZjETGYDoZmssuTUNgOhmayy5NQ2BDlHxeDdb5BfxSaB9bkS7fPdOYC28bXm_o1mxmFijL&_nc_ohc=0_kEaZROSDEAX_OPqUH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJMhbC2q9t3P9nHp5Lp8ga3tBTtsekIPr3fOlryZjFYug&oe=626D4A84">
+        <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/277010085_657577218870847_6168265884284012431_n.png?stp=dst-png_p206x206&_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeE6tOgnUM7uqupI-VWZjETGYDoZmssuTUNgOhmayy5NQ2BDlHxeDdb5BfxSaB9bkS7fPdOYC28bXm_o1mxmFijL&_nc_ohc=LqnCPc1T4VsAX-QylSI&_nc_ht=scontent.fmnl13-2.fna&oh=03_AVIQlHI2cjhjLvxC0XddHRUThcwOHtmiMOzn7Q0oS_OiNQ&oe=62713F04"/>
         <h2>Website Designer</h2>
         <h3>PROFESSIONAL ELEGANT DESIGNS</h3>
-        <p>Our websites capture your audience's attention<br> both through form and function. <br>
-            Thorough attention to layout, appearance, <br>and visual flow to provide 
-            <br>the best web design for brands.</p>
+        <p>Our websites capture your audience's attention both through form and function.
+            Thorough attention to layout, appearance,and visual flow to provide 
+            the best web design for brands.</p>
     </div>
     <div class="service-2">
         <i class="fa fa-check-circle"style="font-size:48px;color:red"></i>
-        <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/277358021_691638445595300_8639542721741066850_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGmXsAo6yf1HZ_s0S1xINgkT1yCtAb263tPXIK0Bvbre9Vv0Gy1mhyu7ewz9yQqVpkZUvduP46cBxS8l5eavQJe&_nc_ohc=JOHv-5Nn7jEAX8K2ZY3&_nc_ht=scontent.fmnl8-2.fna&oh=03_AVJ5mUCi4fpYlCLhkwGN5Vk26JfX7EcV_Z1UiTJfz2Bfeg&oe=626D0D87">
+        <img src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t1.15752-9/277358021_691638445595300_8639542721741066850_n.jpg?stp=dst-jpg_p206x206&_nc_cat=109&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeGmXsAo6yf1HZ_s0S1xINgkT1yCtAb263tPXIK0Bvbre9Vv0Gy1mhyu7ewz9yQqVpkZUvduP46cBxS8l5eavQJe&_nc_ohc=qqkWRiUf2e8AX-gjKnT&_nc_ht=scontent.fmnl13-2.fna&oh=03_AVK1T8fBFppruBqmLQpm-iY3XWbLj_qduQXw3wBBnqDOIw&oe=6274F687"/>
         <h2>Online Tutor</h2>
-        <p>My online tutoring platform makes connecting with students<br>
-             (and earning extra income!) simple, convenient, and flexible.<br>
-             We help learners of all ages and stages—from<br>
-              kindergarten through college, continuing education, <br>
-              and career. Our tutors provide empowering,<br>
-              encouraging support to help students complete <br>
-              their assignments, improve their grades, <br>
-              and persist in their studies. Every day, thousands <br>
-              of students share positive feedback about<br>
+        <p>My online tutoring platform makes connecting with students
+             (and earning extra income!) simple, convenient, and flexible.
+             We help learners of all ages and stages—from
+              kindergarten through college, continuing education,
+              and career. Our tutors provide empowering,
+              encouraging support to help students complete
+              their assignments, improve their grades,
+              and persist in their studies. Every day, thousands
+              of students share positive feedback about
                their online tutoring experiences.</p>
-    </div>
+         </div>
     <div class="service-3">
         <i class="fa fa-check-circle"style="font-size:48px;color:red"></i>
-        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/275995780_952695658774993_3429597718635714438_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeFJ2trMYnb68Tw53bW3Q5keT8M02IgYcmpPwzTYiBhyaqad7xNO-_Az5RQipuXjSebtAjYfKpVnWT7wY6wd8_SW&_nc_ohc=A9XCI7201nQAX_uIdgK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVLzXfnojuZVOE3khZkKbVNImRUg8fO0_Y2cDyCR-R6_Cw&oe=626F2273">
+        <img src="https://scontent.fmnl13-1.fna.fbcdn.net/v/t1.15752-9/275995780_952695658774993_3429597718635714438_n.jpg?stp=dst-jpg_p206x206&_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeFJ2trMYnb68Tw53bW3Q5keT8M02IgYcmpPwzTYiBhyaqad7xNO-_Az5RQipuXjSebtAjYfKpVnWT7wY6wd8_SW&_nc_ohc=oeXsaAJzuS8AX_B1sNP&_nc_ht=scontent.fmnl13-1.fna&oh=03_AVI1OGrlNHXhhIdDtQajp7-l1xg6dlfSsyv4-1R1AT75ww&oe=627316F3"/>
         <h2>Video Editing</h2>
         <h3>What should I look for in good video editing?</h3>
-            <p>Simply stated, a good edit will take your<br>
-                ordinary video and make it extraordinary!<br>
-                 Editing can either make or break a video,<br>
-                and good editing should control the video's<br>
+            <p>Simply stated, a good edit will take your
+                ordinary video and make it extraordinary!
+                 Editing can either make or break a video,
+                and good editing should control the video's
                  structure, pace, and tone
-                <br>. The images and audio should be improved,<br>
-                and it should match what the client envisions<br>
+                . The images and audio should be improved,
+                and it should match what the client envisions
                  - and then some.</p>
     </div>
 </div>
 <footer>&copy; Copyright 2022/<span>Juanito</span></footer>
-
 </body>
 </html>
